@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant+Garamond", ui-serif, Georgia, serif;
+
+  --color-rose: #D98997;
+  --color-wine: #A64166;
+  --color-blush: #D9ADC2;
+  --color-sage: #4d7a3a;
+  --color-slate: #878CA3;
+  --color-cream: #FAF7F4;
+  --color-ink: #3a3035;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-ink font-sans font-light leading-relaxed overflow-x-hidden;
+  }
+}
