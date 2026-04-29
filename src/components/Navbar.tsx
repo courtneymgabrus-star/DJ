@@ -18,14 +18,15 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Offerings', href: '#offerings' },
-    { name: 'Events', href: '#events' },
-    { name: 'Connect', href: '#connect' },
+    { name: 'About', href: '#about', isPage: false },
+    { name: 'Offerings', href: '#offerings', isPage: false },
+    { name: 'Gatherings', href: '/gatherings', isPage: true },
+    { name: 'Research', href: '/research', isPage: true },
   ];
 
-  const getHref = (hash: string) => {
-    return isHome ? hash : `/${hash}`;
+  const getHref = (link: { name: string; href: string; isPage: boolean }) => {
+    if (link.isPage) return link.href;
+    return isHome ? link.href : `/${link.href}`;
   };
 
   return (
@@ -43,17 +44,26 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={getHref(link.href)}
-                className="text-[0.7rem] uppercase tracking-widest text-slate font-medium hover:text-wine transition-colors"
-              >
-                {link.name}
-              </a>
+              {link.isPage ? (
+                <Link
+                  to={link.href}
+                  className="text-[0.7rem] uppercase tracking-widest text-slate font-medium hover:text-wine transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  href={getHref(link)}
+                  className="text-[0.7rem] uppercase tracking-widest text-slate font-medium hover:text-wine transition-colors"
+                >
+                  {link.name}
+                </a>
+              )}
             </li>
           ))}
           <li>
             <a
-              href={getHref('#connect')}
+              href={isHome ? '#connect' : '/#connect'}
               className="text-[0.7rem] uppercase tracking-widest font-medium text-wine border border-wine px-5 py-2.5 rounded-full hover:bg-wine hover:text-white transition-all"
             >
               Book a Session
@@ -81,17 +91,28 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-cream/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={getHref(link.href)}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg uppercase tracking-widest text-wine font-medium"
-              >
-                {link.name}
-              </a>
+              link.isPage ? (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-lg uppercase tracking-widest text-wine font-medium"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  key={link.name}
+                  href={getHref(link)}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-lg uppercase tracking-widest text-wine font-medium"
+                >
+                  {link.name}
+                </a>
+              )
             ))}
             <a
-              href={getHref('#connect')}
+              href={isHome ? '#connect' : '/#connect'}
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-lg uppercase tracking-widest font-medium text-wine border border-wine px-8 py-3 rounded-full"
             >

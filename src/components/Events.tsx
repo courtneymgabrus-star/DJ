@@ -3,36 +3,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import EventCalendar from './EventCalendar';
 import { LayoutList, Calendar as CalendarIcon } from 'lucide-react';
+import { EVENTS } from '../constants';
 
-const events = [
-  {
-    id: 'new-moon-sound-bath',
-    month: 'May',
-    day: '15',
-    title: 'New Moon Sound Bath',
-    location: 'Candler Park, Atlanta',
-    type: 'In-person',
-    link: '#register'
-  },
-  {
-    id: 'yoga-nervous-system',
-    month: 'May',
-    day: '22',
-    title: 'Yoga for the Nervous System',
-    location: 'Virtual Workshop',
-    type: 'Online',
-    link: '#register'
-  },
-  {
-    id: 'solstice-somatic-retreat',
-    month: 'Jun',
-    day: '05',
-    title: 'Solstice Somatic Retreat',
-    location: 'Blue Ridge Mountains',
-    type: 'Retreat',
-    link: '#register'
-  }
-];
+const events = EVENTS;
 
 export default function Events() {
   const [view, setView] = useState<'list' | 'calendar'>('list');
