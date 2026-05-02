@@ -13,7 +13,7 @@ export default function About() {
           >
              <img
               src="https://i.postimg.cc/wBkK19yX/About.jpg"
-              alt="Divine Juls"
+              alt="Jules"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -44,7 +44,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-[0.62rem] tracking-[0.22em] uppercase font-semibold text-sage mb-3"
           >
-            About Juls
+            About Jules
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ export default function About() {
             className="space-y-6 text-slate text-[0.95rem] leading-[1.85]"
           >
             <p>
-              As a queer woman with a doctorate in public health, Julianna weaves together evidence-based practice with ancient somatic wisdom. Her approach is rooted in the belief that wellness is a social justice issue and healing is a radical act of reclamation.
+              As a queer woman with a doctorate in public health, Jules weaves together evidence-based practice with ancient somatic wisdom. Her approach is rooted in the belief that wellness is a social justice issue and healing is a radical act of reclamation.
             </p>
             <p>
               Based in Atlanta, she creates queer-affirming spaces where research meets ritual. Whether through a grounding vinyasa flow or a deep sonic meditation, her work is designed to help you return to the home of your own body.
@@ -74,7 +74,7 @@ export default function About() {
             </blockquote>
 
             <a href="#connect" className="inline-block bg-sage text-white px-9 py-3.5 rounded-full text-[0.7rem] uppercase tracking-[0.12em] font-medium hover:bg-sage/90 transition-all mt-4">
-              Work with Juls
+              Work with Jules
             </a>
           </motion.div>
         </div>

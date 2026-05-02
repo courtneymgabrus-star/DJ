@@ -37,8 +37,10 @@ export default function Navbar() {
           isScrolled || !isHome ? 'bg-cream/95 shadow-sm backdrop-blur-md py-3' : 'bg-transparent'
         }`}
       >
-        <Link to="/" className="font-serif italic text-2xl text-wine tracking-tight">
-          Divine Juls
+        <Link to="/" className="group flex items-center">
+          <span className="font-serif italic text-2xl md:text-3xl tracking-tight text-wine font-medium group-hover:opacity-80 transition-opacity whitespace-nowrap">
+            Jules in Bloom
+          </span>
         </Link>
 
         <ul className="hidden md:flex gap-8 items-center">

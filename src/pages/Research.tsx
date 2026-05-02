@@ -54,7 +54,7 @@ export default function Research() {
               transition={{ delay: 0.2 }}
               className="text-slate text-lg max-w-2xl mx-auto leading-relaxed"
             >
-              Dr. Julianna's work bridges traditional healing arts with contemporary clinical research, focusing on somatic regulation and neurological wellbeing.
+              Jules' work bridges traditional healing arts with contemporary clinical research, focusing on somatic regulation and neurological wellbeing.
             </motion.p>
           </div>
         </section>
@@ -119,7 +119,7 @@ export default function Research() {
              </div>
              <h2 className="font-serif italic text-3xl text-wine mb-6">Clinical Integrity</h2>
              <p className="text-slate leading-relaxed mb-10">
-               Every offering at Divine Juls is rooted in continuous clinical study and ethical practice. We believe that true wellness requires both heart and evidence.
+               Every offering at Jules in Bloom is rooted in continuous clinical study and ethical practice. We believe that true wellness requires both heart and evidence.
              </p>
              <div className="flex flex-wrap justify-center gap-8">
                 <div className="flex items-center gap-2 text-[0.65rem] font-bold text-sage uppercase tracking-widest">

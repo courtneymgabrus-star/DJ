@@ -42,8 +42,8 @@ export default function Hero() {
         className="mb-6"
       >
         <img 
-          src="https://i.postimg.cc/5NhWdXLb/logo.png" 
-          alt="Divine Juls Logo" 
+          src="https://i.postimg.cc/3xwr4sfh/Divine-Jules.png" 
+          alt="Jules in Bloom Logo" 
           className="w-56 md:w-80 mx-auto"
         />
       </motion.div>
@@ -85,7 +85,7 @@ export default function Hero() {
           Explore Offerings
         </a>
         <a href="#about" className="text-wine border border-wine px-9 py-3.5 rounded-full text-[0.7rem] uppercase tracking-[0.12em] font-medium hover:bg-wine hover:text-white transition-all">
-          Meet Juls
+          Meet Jules
         </a>
       </motion.div>
 

@@ -154,7 +154,7 @@ export default function BookingCalendar() {
               </div>
             </div>
             <p className="text-xs text-slate/80 leading-relaxed italic">
-              Booking requests are subject to confirmation. Juls will contact you within 24 hours to finalize details.
+              Booking requests are subject to confirmation. Jules will contact you within 24 hours to finalize details.
             </p>
           </div>
         </div>
@@ -323,7 +323,7 @@ export default function BookingCalendar() {
                 </div>
                 <h4 className="font-serif italic text-3xl text-wine mb-4">Request Sent</h4>
                 <p className="text-slate text-sm leading-relaxed mb-8">
-                  Thank you, {formData.name}. Your booking request for a {formData.type} on {format(selectedDate!, 'MMMM do')} has been received. Juls will be in touch shortly to confirm.
+                  Thank you, {formData.name}. Your booking request for a {formData.type} on {format(selectedDate!, 'MMMM do')} has been received. Jules will be in touch shortly to confirm.
                 </p>
                 <button
                   onClick={() => {

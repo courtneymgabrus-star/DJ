@@ -88,7 +88,7 @@ export default function Connect() {
                 </div>
                 <div>
                   <h4 className="text-[0.65rem] uppercase tracking-[0.15em] font-semibold text-ink mb-1">Email</h4>
-                  <p className="text-slate text-sm">hello@divinejuls.com</p>
+                  <p className="text-slate text-sm">hello@julesinbloom.com</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function Connect() {
                 </div>
                 <div>
                   <h4 className="text-[0.65rem] uppercase tracking-[0.15em] font-semibold text-ink mb-1">Instagram</h4>
-                  <p className="text-slate text-sm">@divinejuls</p>
+                  <p className="text-slate text-sm">@julesinbloom</p>
                 </div>
               </div>
             </div>

@@ -64,7 +64,7 @@ export default function SoundHealing() {
         >
           <Music className="w-8 h-8 text-wine mx-auto mb-6 opacity-40" />
           <p className="font-serif italic text-2xl md:text-3xl text-wine leading-relaxed mb-8">
-            "Julianna's sound baths are unlike anything I've experienced. I felt a profound sense of return to my own body—a quiet safety I haven't found elsewhere."
+            "Jules' sound baths are unlike anything I've experienced. I felt a profound sense of return to my own body—a quiet safety I haven't found elsewhere."
           </p>
           <div className="text-[0.65rem] uppercase tracking-widest font-bold text-sage">
             — Sarah M., Private Client

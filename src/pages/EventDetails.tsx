@@ -29,7 +29,7 @@ const allEvents = [
     location: 'Virtual Workshop',
     type: 'Online',
     link: 'https://example.com/register-2',
-    description: `Somatic tools and gentle vinyasa to recalibrate your stress response. In this interactive virtual workshop, Dr. Julianna will lead you through a series of trauma-informed movements designed to engage the vagus nerve and promote a sense of safety and grounding. 
+    description: `Somatic tools and gentle vinyasa to recalibrate your stress response. In this interactive virtual workshop, Jules will lead you through a series of trauma-informed movements designed to engage the vagus nerve and promote a sense of safety and grounding. 
     
     Perfect for anyone dealing with burnout, chronic stress, or looking to deepen their mind-body connection from the comfort of their home.`,
     image: 'https://i.postimg.cc/zfThWc88/IMG-4031.jpg'
